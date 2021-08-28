@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "GITHUB_COLOR_UPDATER",
+  "version": "1.0.0",
+  "description": "GITHUB_COLOR_UPDATER Chrome Extension",
+  "content_scripts": [
+    {
+      "matches": [
+        "http://example.com/",
+        "https://github.com/*",
+        "https://ghe.ca-tools.org/*"
+      ],
+      "js": [
+        "jquery-3.6.0.min.js",
+        "content.js"
+      ]
+    }
+  ]
+}
