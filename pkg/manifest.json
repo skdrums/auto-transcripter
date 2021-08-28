@@ -1,0 +1,17 @@
+{
+  "name": "Sample",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "Sample Chrome Extension",
+  "content_scripts": [{
+    "matches": [
+      "https://www.youtube.com/",
+      "https://admin-dev.winticket.bet/",
+      "https://qiita.com/",
+      "https://dashboard.winticket.bet/"
+    ],
+    "js": [
+      "content.js"
+    ]
+  }]
+}
