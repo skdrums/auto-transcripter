@@ -4,9 +4,17 @@
   "manifest_version": 2,
   "description": "Sample Chrome Extension",
   "content_scripts": [{
-    "matches": ["https://www.youtube.com/"],
+    "matches": [
+      "https://qiita.com/*"
+    ],
     "js": [
       "content.js"
     ]
-  }]
+  }],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": [
+    "background"
+  ]
 }
