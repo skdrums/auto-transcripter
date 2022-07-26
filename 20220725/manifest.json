@@ -1,0 +1,18 @@
+{
+  "manifest_version":2,
+  "name":"いま表示されてる画面のDOMを操作する",
+  "version":"1.0",
+  "content_scripts":[
+    {
+      "matches":[
+        "https://example.com/",
+        "https://www.youtube.com/*",
+        "https://twitter.com/*"
+      ],
+      "js":[
+        "jquery-3.6.0.min.js",
+        "content.js"
+      ]
+    }
+  ]
+}
